@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    font-size: 16px;
+    padding: 10px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.round {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+}
+
+.round h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.match {
+    background: white;
+    padding: 8px 12px;
+    margin: 6px 0;
+    border-radius: 6px;
+    min-width: 180px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.match:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.final-winner {
+    background: gold !important;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Colores alternados por cada 2 partidos */
+.team-color-0 {
+    background: #fff176;
+}
+
+/* amarillo pastel */
+.team-color-1 {
+    background: #81d4fa;
+}
+
+/* azul pastel */
+.team-color-2 {
+    background: #aed581;
+}
+
+/* verde pastel */
+.team-color-3 {
+    background: #ff8a80;
+}
+
+/* rojo pastel */
+
+#bracketContainer {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 20px;
+    scroll-behavior: smooth;
+}

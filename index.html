@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Torneo 2 vs 2 con Repesca</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+</head>
+
+<body>
+
+    <h1>Torneo 2 vs 2 Interactivo</h1>
+
+    <p>Escribe un jugador por línea (cada equipo será de 2 jugadores automáticamente):</p>
+    <textarea id="namesInput" placeholder="Jugador 1
+Jugador 2
+Jugador 3
+Jugador 4
+Jugador 5
+Jugador 6"></textarea>
+
+    <br>
+    <button onclick="generateTournament()">Generar Torneo</button>
+    <button onclick="regenerateTournament()">Volver a Mezclar</button>
+    <button onclick="exportAsImage()">Exportar Bracket como Imagen</button>
+
+    <h2>Bracket:</h2>
+    <div id="bracketContainer">
+        <div id="bracket"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
